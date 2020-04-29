@@ -1,0 +1,5 @@
+## USEFUL SCRIPTS
+
+# boost volume. Take in.mkv, boost it by 10x (256 = 100%), output to out.mkv
+# stolen from https://www.youtube.com/watch?v=oyNGeKAU5WE
+ffmpeg -i in.mkv -vol 2560 -vcodec copy out.mkv

@@ -1,0 +1,7 @@
+Adding text overlays in kdenlive
+
+- add video clip as you'd usually do, but not to the topmost track (usually track 3). Track 1 or 2 is OK
+- where you'd right click to Add Clip, instead right click to Add Title Clip
+- create the text, I usually do this in white and then also create a black rectangle for the white text to sit on top
+- don't forget to set the timing of this to however long you want the title clip to set there
+- and then render/export as usually

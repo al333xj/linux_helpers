@@ -1,0 +1,8 @@
+# Split / extract pages from a pdf
+# stolen from https://askubuntu.com/questions/221962/how-can-i-extract-a-page-range-a-part-of-a-pdf
+
+# from full-pdf.pdf, extract p12 to p15 and write to outfile_p12-15.pdf
+pdftk full-pdf.pdf cat 12-15 output outfile_p12-15.pdf 
+# extract specific pages 
+pdftk A=in.pdf cat A1-10 A15 A17 output out.pdf
+

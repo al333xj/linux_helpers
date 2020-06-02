@@ -1,0 +1,2 @@
+# how to install a program from  local .deb 
+sudo apt install ./<my_package>.deb

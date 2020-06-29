@@ -1,0 +1,43 @@
+## HOW TO FORMAT SD CARD TO FAT32
+
+# https://ragnyll.gitlab.io/2018/05/22/format-a-sd-card-to-fat-32linux.html
+
+# find SD card
+sudo fdisk -l 
+
+
+# here mine is /dev/mmcblk0
+# it's obvious because of the size
+# DON'T REFORMAT THE FILE SYSTEM
+
+# next enter fdisk
+fdisk /dev/mmcblk0
+
+# delete the existing partition
+d
+
+# check the partition is deleted
+p
+
+# create a new partition
+n
+# make it primary
+p
+
+# make it partition 1
+1
+
+# make it FAT32
+b
+
+# write the changes
+w
+
+
+# MAY need to restart the computer at this point
+# if you do, make sure that when you're calling mkfs.vfat later
+# that you have the correct partition
+# -v is for verbose
+# -c checks for bad blocks - optional and slow, but good 
+# if you have corrupted data on the original partition
+ mkfs.vfat -v -c /dev/mmcblk0p1  

@@ -1,0 +1,4 @@
+# if you have multiple workspaces and multiple monitors
+# when you switch workspaces, all monitors switch
+# source: https://askubuntu.com/questions/1059479/dual-monitor-workspaces-in-ubuntu-18-04
+gsettings set org.gnome.mutter workspaces-only-on-primary false 

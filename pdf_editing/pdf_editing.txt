@@ -6,3 +6,7 @@ pdftk full-pdf.pdf cat 12-15 output outfile_p12-15.pdf
 # extract specific pages 
 pdftk A=in.pdf cat A1-10 A15 A17 output out.pdf
 
+# merge pdfs
+# note that there can't be spaces in the file names
+https://stackoverflow.com/questions/2507766/merge-convert-multiple-pdf-files-into-one-pdf
+pdfunite in-1.pdf in-2.pdf in-n.pdf out.pdf

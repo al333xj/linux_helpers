@@ -10,3 +10,7 @@ pdftk A=in.pdf cat A1-10 A15 A17 output out.pdf
 # note that there can't be spaces in the file names
 https://stackoverflow.com/questions/2507766/merge-convert-multiple-pdf-files-into-one-pdf
 pdfunite in-1.pdf in-2.pdf in-n.pdf out.pdf
+
+# flatten pdfs
+pdftocairo -pdf "input.pdf" "output-with-flatten-annotations.pdf"
+

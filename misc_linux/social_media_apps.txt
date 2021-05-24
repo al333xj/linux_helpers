@@ -1,5 +1,11 @@
+NOPE IT DON'T WORK
+
 From: https://www.fosslinux.com/1124/facebook-messenger-for-ubuntu-linux-mint-and-fedora.htm
 Download https://github.com/Aluxian/Messenger-for-Desktop/releases -  messengerfordesktop-2.0.9-linux-amd64.deb
 sudo dpkg -i ./messengerfordesktop-2.0.9-linux-amd64.deb
 I also had to do
 sudo apt-get install gconf2 beforehand
+
+FRANZ - it works
+sudo dpkg -i ~/Downloads/franz_5.6.1_amd64.deb
+https://linuxhint.com/install-messenger-facebook-chat/

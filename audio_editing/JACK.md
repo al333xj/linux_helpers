@@ -16,8 +16,7 @@ you can probably play with the frames/period - remember that (what does this mea
 open reaper (linux version)
 Go to Options > Preferences > Audio > Device
 Select Audio System = Jack
-At this stage I have 5.3/10ms latency
-
+At this stage I have 5.3/10ms latency (what do these two latencies mean?)
 
 # Start JACK with qjackctl
 

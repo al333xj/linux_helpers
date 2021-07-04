@@ -12,7 +12,7 @@ alex@escher:~$ cat /proc/asound/cards
 
 and find the audio interface - in this case it's 1 [CODEC
 press the "Setup" button on the JACK GUI, and go to Interface - select the audio interface (CODEC in this case)
-you can probably play with the frames/period - remember that (what does this mean??)
+you can probably play with the frames/period - lowering this -> lower latency
 open reaper (linux version)
 Go to Options > Preferences > Audio > Device
 Select Audio System = Jack

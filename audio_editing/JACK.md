@@ -1,4 +1,25 @@
-Start JACK with qjackctl
+# How to hook up JACK with REAPER (linux version)
+
+Start JACK with 
+qjackctl 
+Press "Start"
+Make sure the audio interface is plugged in. Type 
+alex@escher:~$ cat /proc/asound/cards
+ 0 [PCH            ]: HDA-Intel - HDA Intel PCH
+                      HDA Intel PCH at 0xed518000 irq 180
+ 1 [CODEC          ]: USB-Audio - USB Audio CODEC
+                      Burr-Brown from TI USB Audio CODEC at usb-0000:00:14.0-1, full speed
+
+and find the audio interface - in this case it's 1 [CODEC
+press the "Setup" button on the JACK GUI, and go to Interface - select the audio interface (CODEC in this case)
+you can probably play with the frames/period - remember that (what does this mean??)
+open reaper (linux version)
+Go to Options > Preferences > Audio > Device
+Select Audio System = Jack
+At this stage I have 5.3/10ms latency
+
+
+# Start JACK with qjackctl
 
 Default settings had ~ 46ms latency. 
 

@@ -19,7 +19,7 @@ d
 # check the partition is deleted
 p
 
-# create a new partition
+# create a new partition (accept default size params is fine)
 n
 # make it primary
 p
@@ -27,7 +27,11 @@ p
 # make it partition 1
 1
 
-# make it FAT32
+# make it FAT32 (might not have this option)
+b
+
+# if don't have the above option (change type), then b
+t
 b
 
 # write the changes

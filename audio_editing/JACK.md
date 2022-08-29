@@ -1,3 +1,7 @@
+# Update 20220829 I got it working!!!
+
+Trick was to have `jackd` as the autostart command in preferences. This gives 0ms latency
+
 # How to hook up JACK with REAPER (linux version)
 
 Start JACK with 

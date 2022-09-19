@@ -5,6 +5,7 @@ And maybe `qjackctl`?
 
 # How to hook up JACK with REAPER (linux version)
 
+```
 Start JACK with 
 qjackctl 
 Press "Start"
@@ -22,6 +23,7 @@ open reaper (linux version)
 Go to Options > Preferences > Audio > Device
 Select Audio System = Jack
 At this stage I have 5.3/10ms latency (what do these two latencies mean?)
+```
 
 256 frames/period gives 5.3/10 ms latency, which is OK
 

@@ -23,6 +23,8 @@ Go to Options > Preferences > Audio > Device
 Select Audio System = Jack
 At this stage I have 5.3/10ms latency (what do these two latencies mean?)
 
+128 frames/period
+
 # Start JACK with qjackctl
 
 Default settings had ~ 46ms latency. 

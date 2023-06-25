@@ -14,3 +14,14 @@ pdfunite in-1.pdf in-2.pdf in-n.pdf out.pdf
 # flatten pdfs
 pdftocairo -pdf "input.pdf" "output-with-flatten-annotations.pdf"
 
+# convert multiple images into a single pdf (images must be in alphabetical order for this particular code to work)
+convert *.jpg -auto-orient MY_PDF.pdf
+# some R code to scrape a list of files e.g. URLs from https://extract.pics/
+# x is a character vector of image URLs
+files <- fread(x, header = FALSE)
+files[, ord := .I]
+setorder(files, -ord)
+for (i in seq_len(nrow(files))) {
+  download.file(url = files[i, V1]
+                , destfile = glue::glue("~/Documents/2023stuff/manga/Sunadokei 2/{stringr::str_pad(i, width = max(nchar(files$ord)), side = 'left', pad = '0')}.jpg"))
+}

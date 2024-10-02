@@ -1,3 +1,14 @@
+# Download JACK
+
+```
+alex@eratosthenes:~$ sudo apt-get install jackd
+```
+Select "Yes" to enable relatime processes.
+
+```
+alex@eratosthenes:~$ sudo apt-get install qjackctl
+```
+
 # Update 20220829 I got it working!!!
 
 Trick was to have `jackd` as the autostart command in preferences. This gives 0ms latency

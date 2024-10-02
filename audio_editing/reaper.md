@@ -8,3 +8,4 @@ see the JACK.md file
 
 # yabridgectl
 
+Start by install wine: `sudo apt install wine`.

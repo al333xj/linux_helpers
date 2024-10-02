@@ -1,4 +1,4 @@
-# Download JACK
+# Download JACK and integrate with REAPER
 
 ```
 alex@eratosthenes:~$ sudo apt-get install jackd
@@ -8,6 +8,28 @@ Select "Yes" to enable relatime processes.
 ```
 alex@eratosthenes:~$ sudo apt-get install qjackctl
 ```
+
+I ran qjackctl, selected my audio interface (Behringer UM2), and started Jack. Then I started REAPER. It "just worked". However, the latency is a bit high (about 20ms).
+
+Changing the frames/period to 256 gives 0m/s latency. Note at time of writing my kernel is 
+
+```
+alex@eratosthenes:~$ uname -r
+6.8.0-41-generic
+
+```
+
+not the lowlatency kernel.
+
+Using the suggested below defaults of
+
+```
+> Frames/Period 256
+> Sample rate 48000
+> Periods/Buffer 2
+```
+
+gives me 5.3/10 ms latency which I am fine with.
 
 # Update 20220829 I got it working!!!
 

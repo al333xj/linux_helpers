@@ -102,3 +102,12 @@ Finished setting up 2 plugins (1 new), skipped 0 non-plugin .dll files
 ```
 
 Ran Reaper. That got the iLok stuff working. Got "Activation is required" message from NeuralDSP. Pressed Activate. Entered my username and password and it all worked!!!
+
+# Nice which I might have lost in the switchover
+
+```
+The following effects were in the project file and are not available. REAPER will keep their configurations, but things may not sound as desired.
+	Track 1: VST3i: SSDSampler5 (Steven Slate) (48 out)
+	Track 2: VSTi: ES DGenR8 (ExperimentalScene)
+	Track 3: VSTi: ES DGenR8 (ExperimentalScene)
+```

@@ -38,3 +38,9 @@ yabridgectl sync
 ```
 
 All appears to be working!
+
+# Archetype Nolly plugin
+
+Follwing instructions: https://downloads.neuraldsp.com/file/archetype-nolly-installers/Archetype-Nolly-v1.0.1.pdf
+
+Downloaded iLok: https://www.ilok.com/#!home. Ran the .exe in using `wine`. It all installed according to the defaults with no issues.

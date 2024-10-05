@@ -41,6 +41,38 @@ All appears to be working!
 
 # Archetype Nolly plugin
 
-Follwing instructions: https://downloads.neuraldsp.com/file/archetype-nolly-installers/Archetype-Nolly-v1.0.1.pdf
+Follwing instructions: [https://downloads.neuraldsp.com/file/archetype-nolly-installers/Archetype-Nolly-v1.0.1.pdf](https://downloads.neuraldsp.com/file/archetype-nolly-x-installers/Archetype%20Nolly%20X%20v1.0.0.pdf)
 
 Downloaded iLok: https://www.ilok.com/#!home. Ran the .exe in using `wine`. It all installed according to the defaults with no issues.
+
+This created a file called `iLok License Manager.desktop` on my Desktop. Not sure what to do with it...
+
+```
+alex@eratosthenes:~/Desktop$ wine ./iLok\ License\ Manager.desktop 
+002c:fixme:winediag:loader_init wine-staging 9.18 is a testing version containing experimental patches.
+002c:fixme:winediag:loader_init Please mention your exact version when filing bug reports on winehq.org.
+0048:fixme:heap:RtlSetHeapInformation HEAP_INFORMATION_CLASS 1 not implemented!
+0060:fixme:advapi:RegisterEventSourceW ((null),L"Bonjour Service"): stub
+0060:fixme:advapi:ReportEventA (00000000CAFE4242,0x0004,0x0000,0x00000064,0000000000000000,0x0001,0x00000000,0000000000B0FA50,0000000000000000): stub
+0060:fixme:advapi:ReportEventW (00000000CAFE4242,0x0004,0x0000,0x00000064,0000000000000000,0x0001,0x00000000,00000000006F1F60,0000000000000000): stub
+0060:fixme:winsock:WSAIoctl SIO_UDP_CONNRESET stub
+0060:fixme:winsock:WSAIoctl SIO_UDP_CONNRESET stub
+0060:fixme:advapi:ReportEventA (00000000CAFE4242,0x0004,0x0000,0x00000064,0000000000000000,0x0001,0x00000000,0000000000B0FA50,0000000000000000): stub
+0060:fixme:advapi:ReportEventW (00000000CAFE4242,0x0004,0x0000,0x00000064,0000000000000000,0x0001,0x00000000,00000000006F1F60,0000000000000000): stub
+0058:fixme:service:svcctl_EnumServicesStatusExW resume handle not supported
+0058:fixme:service:svcctl_EnumServicesStatusExW resume handle not supported
+0058:fixme:service:svcctl_EnumServicesStatusExW resume handle not supported
+0058:fixme:service:svcctl_EnumServicesStatusExW resume handle not supported
+0060:fixme:advapi:ReportEventA (00000000CAFE4242,0x0004,0x0000,0x00000064,0000000000000000,0x0001,0x00000000,0000000000B0FA50,0000000000000000): stub
+0060:fixme:advapi:ReportEventW (00000000CAFE4242,0x0004,0x0000,0x00000064,0000000000000000,0x0001,0x00000000,00000000006F1F60,0000000000000000): stub
+0060:fixme:netapi32:NetGetJoinInformation Semi-stub (null) 0000000000B0FAC8 0000000000B0FAC0
+010c:fixme:sync:SetWaitableTimerEx (000000000000014C, 000000000187FB58, 0, 0000000000000000, 0000000000000000, 0000000000000000, 100) semi-stub
+00e0:fixme:file:NtLockFile I/O completion on lock not implemented yet
+Application could not be started, or no application associated with the specifie
+d file.
+ShellExecuteEx failed: File not found.
+```
+
+Downloaded Archetype: Nolly X (apparently this is an update of Archetype: Nolly). This [link](https://neuraldsp.com/news/introducing-archetype-nolly-x?srsltid=AfmBOoq-xdGgDwmhjRWKbsQMbJ0Ou9EF7JbWjCNgZJHmSGrh-GKOs4_d) says "_The new Archetype: Nolly X plugin is a free update to existing Archetype: Nolly plugin users._"
+
+Ran the .exe. Got a not very helpful screen. Clicked Next. Agreed to the License Agreement by guessing. Got two options which I am guessing is "install for this user" or "install for everyone". Clicked the first, I dunno what it is.

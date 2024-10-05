@@ -32,4 +32,9 @@ This all worked fine. Back to the `yabridge` repo. Followed the Ubuntu instructi
 I tested this by downloading [MT Power Drumkit](https://www.powerdrumkit.com/download76187.php) as a VST3, 64-bit, for Windows. Saved this to `~/Documents/ReaperEffects/windows-for-yabridge`. Then I followed the GH to add this via `yabridgectl`
 
 ```
+yabridgectl add $HOME/Documents/ReaperEffects/windows-for-yabridge/
+yabridgectl sync
+# ^ this tried to make me install Wine Mono. I let it do it, but it failed with a "corrupted checksum" error or something. Still seemed to work though.
 ```
+
+All appears to be working!

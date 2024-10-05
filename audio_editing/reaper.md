@@ -75,4 +75,30 @@ ShellExecuteEx failed: File not found.
 
 Downloaded Archetype: Nolly X (apparently this is an update of Archetype: Nolly). This [link](https://neuraldsp.com/news/introducing-archetype-nolly-x?srsltid=AfmBOoq-xdGgDwmhjRWKbsQMbJ0Ou9EF7JbWjCNgZJHmSGrh-GKOs4_d) says "_The new Archetype: Nolly X plugin is a free update to existing Archetype: Nolly plugin users._"
 
-Ran the .exe. Got a not very helpful screen. Clicked Next. Agreed to the License Agreement by guessing. Got two options which I am guessing is "install for this user" or "install for everyone". Clicked the first, I dunno what it is.
+Ran the .exe. Got a not very helpful screen (I think due to Wine errors). Clicked Next. Agreed to the License Agreement by guessing. Got two options which I am guessing is "install for this user" or "install for everyone". Clicked the first, I dunno what it is.
+
+This is where I think it is going to install things? According to the screen
+
+```
+C:\Program Files\Neural DSP\
+C:\Program Files\Common Files\Avid\Audio\Plug-Ins\
+C:\Program Files\VstPlugins\
+C:\Program Files\Common Files\VST3\
+```
+
+Pressed Next. Got another unhelpful screen with no writing I can read. Pressed Install. Clicked Finish.
+
+`yabridgectl`-d it.
+
+```
+alex@eratosthenes:~/Documents/ReaperEffects/windows-for-yabridge$ yabridgectl add ~/.wine/drive_c/Program\ Files/Common\ Files/VST3/
+alex@eratosthenes:~/Documents/ReaperEffects/windows-for-yabridge$ yabridgectl sync
+Setting up VST2, VST3, and CLAP plugins using:
+- /home/alex/.local/share/yabridge/libyabridge-chainloader-vst2.so
+- /home/alex/.local/share/yabridge/libyabridge-chainloader-vst3.so
+- /home/alex/.local/share/yabridge/libyabridge-chainloader-clap.so
+
+Finished setting up 2 plugins (1 new), skipped 0 non-plugin .dll files
+```
+
+Ran Reaper. That got the iLok stuff working. Got "Activation is required" message from NeuralDSP. Pressed Activate. Entered my username and password and it all worked!!!

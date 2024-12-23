@@ -39,6 +39,24 @@ yabridgectl sync
 
 All appears to be working!
 
+## Note - wine version > 9.21 issue
+
+https://github.com/robbert-vdh/yabridge/issues/382 <- full issue. tl;dr - `wine` > 9.21 has issues with VST UIs. To downgrade:
+
+```
+alex@eratosthenes:~$ sudo apt-get install wine-staging-i386=9.21~noble-1 wine-staging-amd64=9.21~noble-1
+alex@eratosthenes:~$ sudo apt-get install wine-staging=9.21~noble-1
+```
+
+Tried to run Reaper. Got a wine issue
+
+```
+10:25:43 [MT-PowerDrumKit-068Tcdgx] [Wine STDERR] /home/alex/.local/share/yabridge/yabridge-host.exe: 36: exec: wine: not found
+10:25:43 [MT-PowerDrumKit-068Tcdgx] The Wine host process has exited unexpectedly. Check the output above for more information.
+terminate called without an active exception
+Aborted (core dumped)
+```
+
 # Archetype Nolly plugin
 
 Follwing instructions: [https://downloads.neuraldsp.com/file/archetype-nolly-installers/Archetype-Nolly-v1.0.1.pdf](https://downloads.neuraldsp.com/file/archetype-nolly-x-installers/Archetype%20Nolly%20X%20v1.0.0.pdf)

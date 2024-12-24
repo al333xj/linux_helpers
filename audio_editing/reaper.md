@@ -57,6 +57,20 @@ terminate called without an active exception
 Aborted (core dumped)
 ```
 
+which tl;dr appears to be due it [not being able to find `wine`](https://askubuntu.com/questions/1536282/wine-in-installed-on-ubuntu-but-the-system-cant-find-it-what-should-i-do?noredirect=1#comment2702605_1536282). Adding a symbolic link at it worked.
+
+```
+alex@eratosthenes:~$ sudo ln -s /opt/wine-staging/bin/wine /usr/bin/wine
+[sudo] password for alex: 
+alex@eratosthenes:~$ yabridgectl sync
+Setting up VST2, VST3, and CLAP plugins using:
+- /home/alex/.local/share/yabridge/libyabridge-chainloader-vst2.so
+- /home/alex/.local/share/yabridge/libyabridge-chainloader-vst3.so
+- /home/alex/.local/share/yabridge/libyabridge-chainloader-clap.so
+
+Finished setting up 8 plugins (0 new), skipped 0 non-plugin .dll files
+```
+
 # Archetype Nolly plugin
 
 Follwing instructions: [https://downloads.neuraldsp.com/file/archetype-nolly-installers/Archetype-Nolly-v1.0.1.pdf](https://downloads.neuraldsp.com/file/archetype-nolly-x-installers/Archetype%20Nolly%20X%20v1.0.0.pdf)

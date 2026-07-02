@@ -8,7 +8,9 @@ see the JACK.md file
 
 # yabridgectl
 
-Repo: https://github.com/robbert-vdh/yabridge. THIS IS GOOD FOR DOWNGRADING WINE: https://github.com/robbert-vdh/yabridge#downgrading-wine
+Repo: https://github.com/robbert-vdh/yabridge. 
+
+THIS IS GOOD INSTRUCTIONS FOR DOWNGRADING WINE: https://github.com/robbert-vdh/yabridge#downgrading-wine
 
 Start by install `wine-staging` as per the instructions on Github. That directed me [here](https://gitlab.winehq.org/wine/wine/-/wikis/Debian-Ubuntu)
 

@@ -145,3 +145,12 @@ The following effects were in the project file and are not available. REAPER wil
 	Track 2: VSTi: ES DGenR8 (ExperimentalScene)
 	Track 3: VSTi: ES DGenR8 (ExperimentalScene)
 ```
+
+# Low memory locking issue
+
+To `/etc/security/limits.conf`, added at the end of the file (`alex` is my username)
+
+```
+@alex - rtprio 98
+@alex - memlock unlimited
+```
